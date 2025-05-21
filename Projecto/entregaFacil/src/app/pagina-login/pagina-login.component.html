@@ -1,0 +1,41 @@
+<body>
+
+    <div>
+        <img src="assets/3d_delivery_box_parcel.jpg" alt="">
+    </div>
+
+    <div class="login">
+
+        <form action="" class="login_form">
+            <h1 class="login_title">Login</h1>
+
+            <div class="login_inputs">
+                
+
+                <div class="login_box">
+                    <input type="text" placeholder="Digite o seu username" class="login_input" [(ngModel)]="username" name="username" required>
+                </div>
+
+                <div class="login_box">
+                    <input type="password" placeholder="Digite a sua password" class="login_input" [(ngModel)]="password" name="password" required>
+                </div>
+
+            </div>
+
+            <div class="centralizar">
+                <button type="submit" class="login_button" (click)="fazerLogin()">Entrar</button>
+            </div>
+
+            <div class="login_register">
+                Não tens uma conta? <a routerLink="/pagina-escolher-cadastro">Registrar</a>
+            </div>
+
+            <div class="login_voltar">
+                <a routerLink="/">← Voltar ao início</a>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>

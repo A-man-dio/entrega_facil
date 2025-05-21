@@ -1,0 +1,54 @@
+<p class="titulo">Cadastrar-se como : </p>
+
+<body>
+
+    <div class="login option1">
+
+        <form action="" class="login_form" routerLink="/pagina-cadastro" [queryParams]="{ tipo: 'individuo' }">
+            <h1 class="emojiSize">🧍‍♂️</h1>
+            <h1 class="login_title">Comerciante/Indivíduo</h1>
+
+            <div class="login_inputs">
+                <p>Tens produtos para entregar ou precisas enviar algo? Cadastra-te como comerciante ou indivíduo e
+                    publica facilmente as tuas entregas. A Entrega Fácil conecta-te à empresas de entrega disponíveis,
+                    de forma
+                    rápida, segura e acessível.</p>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="login option2">
+
+        <form action="" class="login_form" routerLink="/pagina-cadastro" [queryParams]="{ tipo: 'entregador' }">
+            <h1 class="emojiSize">🛵</h1>
+            <h1 class="login_title">Empresa</h1>
+
+            <div class="login_inputs">
+
+                <p>Tens uma empresa de entregas? Junta-te à nossa plataforma e aumenta a tua carteira de clientes.
+                    Conectamos empresas de entregas a pessoas que precisam enviar produtos de forma segura, rápida e
+                    organizada. Recebe pedidos diretamente pela nossa plataforma e gere as tuas entregas com mais
+                    eficiência e profissionalismo.</p>
+
+            </div>
+
+
+
+        </form>
+    </div>
+
+</body>
+
+
+<div class="extra">
+
+    <div class="login_register">
+        Já tens uma conta? <a routerLink="/pagina-login">Login</a>
+    </div>
+
+    <div class="login_voltar">
+        <a href="#">← Voltar ao início</a>
+    </div>
+
+</div>

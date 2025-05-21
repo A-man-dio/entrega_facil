@@ -1,0 +1,101 @@
+<body>
+
+    <section class="container">
+
+        @if (tipoCadastro == "individuo"){
+        <header>Cadastro de Comerciante/Indivíduo</header>
+        <h1 class="emojiSize">🧍‍♂️</h1>
+        } @else {
+
+        <header>Cadastro de Empresa</header>
+        <h1 class="emojiSize">🛵</h1>
+        }
+
+
+        <form action="" class="form">
+
+            <div class="input-box">
+                @if (tipoCadastro == "individuo"){
+
+                <label for="">Nome Completo</label>
+                <input type="text" placeholder="Insira o Nome Completo" [(ngModel)]="nomeCompleto"  name="nomeCompleto"  required>
+
+                } @else{
+
+                <label for="">Nome da Empresa</label>
+                <input type="text" placeholder="Insira o Nome da Empresa" [(ngModel)]="nomeCompleto" name="nomeCompleto" required>
+                }
+            </div>
+
+            <div class="input-box">
+                <label for="">Email</label>
+
+                @if (tipoCadastro == "individuo"){
+                <input type="text" placeholder="Insira o Email" [(ngModel)]="email" name="email" required>
+                } @else{
+                <input type="text" placeholder="Insira o Email da Empresa" [(ngModel)]="email" name="email" required>
+                }
+
+            </div>
+
+
+            <div class="column">
+
+                <div class="input-box">
+                    <label for="">Número de Telefone</label>
+                    @if (tipoCadastro == "individuo"){
+                    <input type="number" placeholder="Insira o Número de Telefone" [(ngModel)]="numeroTelefone" name="numeroTelefone" required>
+                    } @else{
+                    <input type="number" placeholder="Insira o Telefone da Empresa" [(ngModel)]="numeroTelefone" name="numeroTelefone" required>
+                    }
+                </div>
+
+                <div class="input-box">
+
+                    @if (tipoCadastro == "individuo"){
+
+                    <label for="">Username</label>
+                    <input type="text" placeholder="Insira o Username" [(ngModel)]="username" name="username" required>
+
+                    } @else{
+
+                    <label for="">Username do Admin</label>
+                    <input type="text" placeholder="Insira o Username do Admin" [(ngModel)]="username" name="username" required>
+
+                    }
+
+                </div>
+
+            </div>
+
+
+            <div class="column">
+
+                <div class="input-box">
+                    <label for="">Password</label>
+                    <input type="text" placeholder="Insira a sua password" [(ngModel)]="password" name="password" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="">Confirmação da Password</label>
+                    <input type="text" placeholder="Confirme a sua password"  [(ngModel)]="confirmacaoPassword" name="confirmacaoPassword" required>
+                </div>
+                
+            </div>
+
+            <div class="divBtn">
+                <button (click)="efectuarCadastro()" >Cadastrar</button>
+            </div>
+            
+            <div class="login_register">
+                Já tens uma conta? <a routerLink="/pagina-login">Login</a>
+            </div>
+
+            <div class="login_voltar">
+                <a routerLink="/pagina-escolher-cadastro">← Voltar</a>
+            </div>
+
+        </form>
+
+    </section>
+</body>
