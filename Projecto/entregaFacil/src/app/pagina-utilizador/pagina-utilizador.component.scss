@@ -83,4 +83,48 @@ main{
     background-color: rgb(235, 235, 235);
     height: 89vh;
     width: 70%;
+    overflow-y: auto;
+    border: 1px #0000005b solid;
+    border-radius: 5px;
+}
+
+.card {
+  margin: 10px;
+  display: flex;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.card-left {
+  flex: 0 0 30%;
+  background-color: rgb(89, 0, 255); 
+}
+
+.card-right {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.card-right h1 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.card-right p {
+  font-size: 0.95rem;
+  color: #444;
 }

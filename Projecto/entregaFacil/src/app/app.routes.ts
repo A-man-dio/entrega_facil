@@ -5,6 +5,7 @@ import { PaginaLoginComponent } from './pagina-login/pagina-login.component';
 import { PaginaEscolherCadastroComponent } from './pagina-escolher-cadastro/pagina-escolher-cadastro.component';
 import { ToastAlertComponent } from './toast-alert/toast-alert.component';
 import { PaginaUtilizadorComponent } from './pagina-utilizador/pagina-utilizador.component';
+import { PaginaSolicitarEntregaComponent } from './pagina-solicitar-entrega/pagina-solicitar-entrega.component';
 
 export const routes: Routes = [
     {path: "", redirectTo: "pagina-inicial", pathMatch: "full" }, // Redireciona para página inicial
@@ -13,5 +14,6 @@ export const routes: Routes = [
     {path: "pagina-escolher-cadastro" , component: PaginaEscolherCadastroComponent},
     {path: "pagina-cadastro" , component: PaginaCadastroComponent},
     {path: "toast-alert" , component: ToastAlertComponent},
-    {path: "pagina-utilizador",component:PaginaUtilizadorComponent}
+    {path: "pagina-utilizador",component:PaginaUtilizadorComponent},
+    {path: "solicitar-entrega",component:PaginaSolicitarEntregaComponent}
 ];
